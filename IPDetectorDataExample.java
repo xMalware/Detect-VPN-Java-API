@@ -62,6 +62,10 @@ public class IPDetectorDataExample
 			System.out.println("Continent name: " + ipData.continentName);
 			// Give the continent code
 			System.out.println("Continent code: " + ipData.continentCode);
+			// Give the postal  code
+			System.out.println("Postal code: " + ipData.postalCode);
+			// Give the city name
+			System.out.println("City name: " + ipData.cityName);
 			// Give the response time
 			System.out.println("Response time: " + ipData.responseTime + " ms");
 			// Give the ASN id
@@ -165,6 +169,10 @@ public class IPDetectorDataExample
 		public String	continentName;
 		// Contient code
 		public String	continentCode;
+		// Postal code
+		public String	postalCode;
+		// City name
+		public String	cityName;
 		// Response time
 		public long	responseTime;
 		// ASN Id
