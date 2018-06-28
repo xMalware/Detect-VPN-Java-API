@@ -23,12 +23,12 @@ import com.google.gson.Gson;
 public class IPDetectorDataExample
 {
 
-	// Application name (User agent)
+	// Application name (User agent) : Change it!
 	private final static String		APPLICATION_NAME	= "IPDetectorExample";
-	// Set up your API key on IPDetector.info
-	private final static String		API_KEY				    = "Your API key";
-	// If you want to prettyprint data: new GsonBuilder().setPrettyPrinting().create();
-	private final static Gson		gson			        	= new Gson();
+	// Set up your API key on IPDetector.info : Change it!
+	private final static String		API_KEY			= "Your API key";
+	// If you want to pretty print data: new GsonBuilder().setPrettyPrinting().create();
+	private final static Gson		gson			= new Gson();
 
 	/**
 	 * Main method
@@ -37,9 +37,9 @@ public class IPDetectorDataExample
 	public static void main(String[] args)
 	{
 		// Test with 8.8.8.8
-		String ipAddress = "8.8.8.8";
+		final String ipAddress = "8.8.8.8";
 		// Get IP data
-		IPDetectorObject ipData = getIPData(ipAddress);
+		final IPDetectorObject ipData = getIPData(ipAddress);
 
 		// If the IP data object is null
 		if (ipData == null)
@@ -165,9 +165,9 @@ public class IPDetectorDataExample
 		// Contient code
 		public String	continentCode;
 		// Response time
-		public long		responseTime;
+		public long	responseTime;
 		// ASN Id
-		public int		asnId;
+		public int	asnId;
 		// ASN name
 		public String	asnName;
 		// Organization
@@ -177,7 +177,7 @@ public class IPDetectorDataExample
 		// Is this a Good IP?
 		// 0 = No (VPN/host provider/Proxy)
 		// 1 = Yes
-		public int		goodIp;
+		public int	goodIp;
 
 	}
 
