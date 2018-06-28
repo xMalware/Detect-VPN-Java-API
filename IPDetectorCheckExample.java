@@ -171,6 +171,10 @@ public class IPDetectorCheckExample
 		public String	continentName;
 		// Contient code
 		public String	continentCode;
+		// Postal code
+		public String	postalCode;
+		// City name
+		public String	cityName;
 		// Response time
 		public long	responseTime;
 		// ASN Id
