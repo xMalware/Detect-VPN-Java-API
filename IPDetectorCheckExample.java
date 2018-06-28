@@ -24,9 +24,9 @@ public class IPDetectorCheckExample
 {
 
 	// Set up your API key on IPDetector.info
-	private final static String API_KEY = "Your API key";
+	private final static String		API_KEY = "Your API key";
 	// If you want to prettyprint data: new GsonBuilder().setPrettyPrinting().create();
-	private final static Gson	gson	= new Gson();
+	private final static Gson		gson	= new Gson();
 
 	/**
 	 * Main method
@@ -160,7 +160,7 @@ public class IPDetectorCheckExample
 		// Hostname
 		public String	hostname;
 		// Country name
-		public String 	countryName;
+		public String	countryName;
 		// Country ISO
 		public String	countryIso;
 		// Continent name
@@ -168,9 +168,9 @@ public class IPDetectorCheckExample
 		// Contient code
 		public String	continentCode;
 		// Response time
-		public long		responseTime;
+		public long     responseTime;
 		// ASN Id
-		public int		asnId;
+		public int	asnId;
 		// ASN name
 		public String	asnName;
 		// Organization
@@ -180,7 +180,7 @@ public class IPDetectorCheckExample
 		// Is this a Good IP?
 		// 0 = No (VPN/host provider/Proxy)
 		// 1 = Yes
-		public int		goodIp;
+		public int	goodIp;
 
 	}
 
