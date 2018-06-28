@@ -23,10 +23,12 @@ import com.google.gson.Gson;
 public class IPDetectorCheckExample
 {
 
+	// Application name (User agent)
+	private final static String		APPLICATION_NAME	= "IPDetectorExample";
 	// Set up your API key on IPDetector.info
-	private final static String		API_KEY = "Your API key";
+	private final static String		API_KEY			= "Your API key";
 	// If you want to prettyprint data: new GsonBuilder().setPrettyPrinting().create();
-	private final static Gson		gson	= new Gson();
+	private final static Gson		gson			= new Gson();
 
 	/**
 	 * Main method
@@ -113,13 +115,13 @@ public class IPDetectorCheckExample
 		try {
 
 			// Set the user agent
-			System.setProperty("http.agent", "Mozilla/5.0");
+			System.setProperty("http.agent", APPLICATION_NAME);
 			// Create url
 			final URL url = new URL(ip);
 			// Do the connection
 			final URLConnection con = url.openConnection();
 			// Set the user agent
-			con.setRequestProperty("User-Agent", "Mozilla/5.0");
+			con.setRequestProperty("User-Agent", APPLICATION_NAME);
 			// Set API key
 			con.setRequestProperty("API-Key", apiKey);
 			// Get input stream
@@ -168,7 +170,7 @@ public class IPDetectorCheckExample
 		// Contient code
 		public String	continentCode;
 		// Response time
-		public long     responseTime;
+		public longa	responseTime;
 		// ASN Id
 		public int	asnId;
 		// ASN name
