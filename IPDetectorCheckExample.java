@@ -117,7 +117,7 @@ public class IPDetectorCheckExample
 			// Set the user agent
 			System.setProperty("http.agent", APPLICATION_NAME);
 			// Create url
-			final URL url = new URL(ip);
+			final URL url = new URL("https://api.ipdetector.info/" + ip);
 			// Do the connection
 			final URLConnection con = url.openConnection();
 			// Set the user agent
