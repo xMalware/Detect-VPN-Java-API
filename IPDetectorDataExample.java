@@ -23,11 +23,11 @@ import com.google.gson.Gson;
 public class IPDetectorDataExample
 {
 
-	// Application name (User agent) : Change it!
-	private final static String		APPLICATION_NAME	= "IPDetectorDataExample";
-	// Set up your API key on IPDetector.info : Change it!
+	// Application name (User agent)
+	private final static String		APPLICATION_NAME	= "IPDetectorExample";
+	// Set up your API key on IPDetector.info
 	private final static String		API_KEY			= "Your API key";
-	// If you want to pretty print data: new GsonBuilder().setPrettyPrinting().create();
+	// If you want to prettyprint data: new GsonBuilder().setPrettyPrinting().create();
 	private final static Gson		gson			= new Gson();
 
 	/**
@@ -63,7 +63,7 @@ public class IPDetectorDataExample
 			// Give the continent code
 			System.out.println("Continent code: " + ipData.continentCode);
 			// Give the response time
-			System.out.println("Response time: " + ipData.responseTime);
+			System.out.println("Response time: " + ipData.responseTime + " ms");
 			// Give the ASN id
 			System.out.println("ASN id: " + ipData.asnId);
 			// Give the ASN name
@@ -107,8 +107,8 @@ public class IPDetectorDataExample
 	 */
 	public static String fetchSourceCode(String ip, String apiKey) {
 		// Try to
-		try {
-
+		try
+		{
 			// Set the user agent
 			System.setProperty("http.agent", APPLICATION_NAME);
 			// Create url
@@ -128,7 +128,8 @@ public class IPDetectorDataExample
 			// Buffer length
 			int length;
 			// While the length isn't equal to -1.
-			while ((length = in.read(buffer)) != -1) {
+			while ((length = in.read(buffer)) != -1)
+			{
 				// We write the data
 				result.write(buffer, 0, length);
 			}
