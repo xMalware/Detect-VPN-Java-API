@@ -95,7 +95,7 @@ public class IPDetectorDataExample
 			return null;
 		}
 		// Deserialize data in an object
-		return gson.fromJson(ip, IPDetectorObject.class);
+		return gson.fromJson(sourceCode, IPDetectorObject.class);
 	}
 
 	/**
