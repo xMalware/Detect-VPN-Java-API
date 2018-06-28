@@ -110,7 +110,8 @@ public class IPDetectorCheckExample
 	 * @param apiKey
 	 * @return
 	 */
-	public static String fetchSourceCode(String ip, String apiKey) {
+	public static String fetchSourceCode(String ip, String apiKey)
+	{
 		// Try to
 		try
 		{
