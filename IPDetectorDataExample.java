@@ -24,7 +24,7 @@ public class IPDetectorDataExample
 {
 
 	// Application name (User agent) : Change it!
-	private final static String		APPLICATION_NAME	= "IPDetectorExample";
+	private final static String		APPLICATION_NAME	= "IPDetectorDataExample";
 	// Set up your API key on IPDetector.info : Change it!
 	private final static String		API_KEY			= "Your API key";
 	// If you want to pretty print data: new GsonBuilder().setPrettyPrinting().create();
