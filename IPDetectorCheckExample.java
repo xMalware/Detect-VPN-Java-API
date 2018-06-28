@@ -24,7 +24,7 @@ public class IPDetectorCheckExample
 {
 
 	// Application name (User agent)
-	private final static String		APPLICATION_NAME	= "IPDetectorCheckExample";
+	private final static String		APPLICATION_NAME	= "IPDetectorExample";
 	// Set up your API key on IPDetector.info
 	private final static String		API_KEY			= "Your API key";
 	// If you want to prettyprint data: new GsonBuilder().setPrettyPrinting().create();
@@ -112,8 +112,8 @@ public class IPDetectorCheckExample
 	 */
 	public static String fetchSourceCode(String ip, String apiKey) {
 		// Try to
-		try {
-
+		try
+		{
 			// Set the user agent
 			System.setProperty("http.agent", APPLICATION_NAME);
 			// Create url
@@ -133,7 +133,8 @@ public class IPDetectorCheckExample
 			// Buffer length
 			int length;
 			// While the length isn't equal to -1.
-			while ((length = in.read(buffer)) != -1) {
+			while ((length = in.read(buffer)) != -1)
+			{
 				// We write the data
 				result.write(buffer, 0, length);
 			}
@@ -170,7 +171,7 @@ public class IPDetectorCheckExample
 		// Contient code
 		public String	continentCode;
 		// Response time
-		public longa	responseTime;
+		public long	responseTime;
 		// ASN Id
 		public int	asnId;
 		// ASN name
